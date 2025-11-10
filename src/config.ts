@@ -1,92 +1,74 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
-  accentColor: "#1d4ed8",
+  name: "Roulem Baitiche",
+  title: "Étudiant-ingénieur en cybersécurité (ESAIP)",
+  description: "Portfolio professionnel de Roulem Baitiche",
+  accentColor: "#1d4ed8", // On garde la couleur du template
+
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "baitiche.roulem@outlook.fr",
+    linkedin: "https://linkedin.com/in/TON-LINKEDIN", // Mets ton lien ici
+    github: "https://github.com/TON-GITHUB", // Mets ton lien ici
   },
+
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
-  projects: [
-    {
-      name: "AI Dev Roundup Newsletter",
-      description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
-    },
-    {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
-      description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
-    },
-    {
-      name: "ExtensionKit",
-      description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
-    },
+    "Étudiant en 4ᵉ année cycle ingénieur à l’ESAIP, spécialisé en cybersécurité. Sérieux, rigoureux, et motivé, je recherche une alternance en cybersécurité à partir de septembre 2026. Expérience en déploiement d’outils digitaux, développement WordPress, automatisation Excel, et support organisationnel. Intérêt marqué pour la sécurité des systèmes, la défense, et l’analyse des risques.",
+
+  skills: [
+    "Python",
+    "Excel avancé",
+    "Linux / Windows Administration",
+    "VMware",
+    "AWS",
+    "SQL"
   ],
+
+  projects: [], // Tu n’en as pas besoin → la section ne s'affichera pas
+
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      company: "RS2i — Levallois-Perret",
+      title: "Stagiaire",
+      dateRange: "févr. 2023 → mars 2023",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
+        "Pilotage du déploiement d’un outil digitalisé",
+        "Déploiement réussi auprès de plusieurs collaborateurs",
+        "Automatisation Excel et optimisation des processus"
       ],
     },
     {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
+      company: "ETS Étanchéité — Fougères",
+      title: "Appui au développement d’une TPE",
+      dateRange: "juin 2025 → mi-août 2025",
       bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
+        "Création de site WordPress responsive + supports de communication",
+        "Mise en place d’une campagne Google Ads",
+        "Relation client, gestion administrative",
       ],
     },
     {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
+      company: "Emplois d’été successifs",
+      title: "Manutention, Couverture, Agent de service en EHPAD",
+      dateRange: "2023 → 2025",
       bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
+        "Rigueur, respect des normes de sécurité",
+        "Travail en équipe, polyvalence",
+        "Autonomie sur le terrain"
       ],
-    },
+    }
   ],
+
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
-      achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
-      ],
+      school: "ESAIP — Ingénierie cybersécurité",
+      degree: "Cycle ingénieur",
+      dateRange: "sept. 2022 → en cours",
+      achievements: [],
     },
     {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
-      achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
-      ],
+      school: "Óbuda University — Budapest",
+      degree: "Erasmus — Semestre international",
+      dateRange: "févr. 2025 → juin 2025",
+      achievements: [],
     },
   ],
 };
