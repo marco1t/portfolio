@@ -1,0 +1,27 @@
+---
+import { siteConfig } from "../config";
+const hasBenevolat = siteConfig.benevolat && siteConfig.benevolat.length > 0;
+---
+
+{hasBenevolat && (
+<section id="benevolat" class="p-8 sm:p-12 md:p-16 lg:p-24">
+  <div>
+    <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+      Bénévolat
+    </h2>
+    <div class="w-[75px] h-[5px] mt-2 rounded-full" style={`background-color: ${siteConfig.accentColor}`}></div>
+
+    <div class="mt-10 space-y-8">
+      {siteConfig.benevolat.map((exp) => (
+        <div class="border border-gray-200 rounded-lg p-6 shadow-sm">
+          <h3 class="text-xl font-semibold text-gray-900">{exp.organization}</h3>
+          <p class="text-gray-600 italic">{exp.role} — {exp.dateRange}</p>
+          <ul class="list-disc ml-6 mt-3 space-y-1 text-gray-700">
+            {exp.description.map((d) => <li>{d}</li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+)}

@@ -1,0 +1,43 @@
+---
+import { siteConfig } from "../config";
+---
+
+<section id="skills" class="p-8 sm:p-12 md:p-16 lg:p-24">
+  <div>
+    <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+      Compétences
+    </h2>
+    <div
+      class="w-[75px] h-[5px] mt-2 rounded-full"
+      style={`background-color: ${siteConfig.accentColor}`}
+    ></div>
+
+    <!-- ✅ Compétences techniques -->
+    <div class="mt-10">
+      <h3 class="text-xl font-semibold text-gray-800 mb-4">Techniques</h3>
+      <div class="flex flex-wrap gap-3">
+        {siteConfig.skills.map((skill: string) => (
+          <span class="px-3 py-1.5 bg-gray-100 text-gray-800 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors duration-200">
+            {skill}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    <!-- ✅ Compétences comportementales -->
+    {siteConfig.softSkills && siteConfig.softSkills.length > 0 && (
+      <div class="mt-10">
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">
+          Comportementales
+        </h3>
+        <div class="flex flex-wrap gap-3">
+          {siteConfig.softSkills.map((skill: string) => (
+            <span class="px-3 py-1.5 bg-gray-100 text-gray-800 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors duration-200">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+    )}
+  </div>
+</section>

@@ -71,4 +71,36 @@ export const siteConfig = {
       achievements: [],
     },
   ],
+    benevolat: [
+    {
+      role: "Membre / Organisateur",
+      organization: "ESN – Erasmus Student Network",
+      dateRange: "2024 → 2025",
+      description: [
+        "Coordination d’équipes internationales",
+        "Organisation d’événements sportifs & intégration interculturelle",
+        "Gestion logistique et communication"
+      ],
+    },
+    {
+      role: "Participation actions solidaires",
+      organization: "Associations locales",
+      dateRange: "2023 → 2025",
+      description: [
+        "Aide à la distribution de repas",
+        "Soutien événementiel et logistique",
+      ],
+    },
+  ],
+
+  softSkills: [
+    "Adaptabilité",
+    "Esprit d’analyse",
+    "Autonomie",
+    "Sens du collectif",
+    "Organisation",
+    "Communication",
+    "Gestion du stress"
+  ],
+
 };
